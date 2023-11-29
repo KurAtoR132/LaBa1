@@ -24,5 +24,20 @@ namespace LaBa1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            Answer.Clear();
+            double a, V, S;
+            if (!double.TryParse(NumberA.Text, out a))
+            {
+                MessageBox.Show("ТЫ ВООБЩЕ УМНЫЙ?");
+
+            }
+            V = Math.Pow(a, 3);
+            S = 6 * Math.Pow(a, 2);
+            Answer.Text += $"V = {V}\nS={S}";
+        }
     }
 }

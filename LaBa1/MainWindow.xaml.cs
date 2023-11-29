@@ -32,17 +32,17 @@ namespace LaBa1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(new Page2());
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(new Page3());
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(new Page4());
         }
     }
 }
