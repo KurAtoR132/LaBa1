@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,389" Grid.RowSpan="2" >
+                <Button Content="задание 1" Click="Button_Click" Width="204"/>
+                <Button Content="задание 2" Click="Button_Click_1" Width="192"/>
+                <Button Content="задание 3" Click="Button_Click_2" Width="208"/>
+                <Button Content="задание 4" Click="Button_Click_3" Width="190"/>
+            </StackPanel>
+            <Frame Grid.Row="1" x:Name="MyFrame"></Frame>
+
     </Grid>
 </Window>
